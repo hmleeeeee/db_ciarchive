@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <title>CI Guide 관리</title>
+    <script src="/resource/admin/js/lib/jquery-3.2.1.min.js"></script>
+    <script src="/resource/admin/js/netive.ui.common.js"></script><!-- namespace, device check -->
+    <script src="/resource/admin/js/ui.common.js"></script><!-- UI script -->
+    <link rel="stylesheet" href="/resource/admin/css/ui.common.css">
+
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+</head>
+<body>
+
+<div class="admin_wrap">
+
+    <!-- navigation -->
+    <div id="inc_navi"></div>
+
+    <!-- content -->
+    <div class="admin_content">
+        <h1 class="h1">가이드페이지 관리</h1>
+
+        <div class="ui-search">
+            <select>
+                <option value="">선택</option>
+            </select>
+            <select>
+                <option value="">선택</option>
+            </select>
+            <select>
+                <option value="">선택</option>
+            </select>
+
+            <div class="ui-btn-wrap">
+                <div>
+                    <button type="button" class="btn btn-primary"><span>불러오기</span></button>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <h2 class="h2">화면정보</h2>
+
+        <p class="ui-list-dot">
+            메뉴명은 변경 불가하며 콘텐츠 영역을 관리할 수 있습니다.
+        </p>
+
+        <div class="ui-table-view">
+            <table>
+                <colgroup>
+                    <col style="width: 170px">
+                    <col>
+                    <col style="width: 170px">
+                    <col>
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th scope="row">화면명</th>
+                        <td>Name Plate</td>
+                        <th scope="row">최종수정일</th>
+                        <td>2020/08/20 15:21:45</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">화면노출여부</th>
+                        <td>
+                            <select class="size_auto">
+                                <option value="">Y</option>
+                                <option value="">N</option>
+                            </select>
+                        </td>
+                        <th scope="row">수정관리자</th>
+                        <td>abc123@dbgroup.co.kr</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">섬네일 업로드</th>
+                        <td><input type="file"></td>
+                        <th scope="row">등록된 섬네일 파일</th>
+                        <td>
+                            <span class="attachedFile">
+                                <a href="#">031_보험계약대출신청_약정동의.jpg</a>
+                                <button type="button"><span>삭제</span></button>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">화면설명</th>
+                        <td colspan="3"><input type="text"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <hr>
+
+        <h2 class="h2">HTML 웹에디터</h2>
+        <div class="ui-box">
+            <textarea></textarea>
+        </div>
+
+        <hr>
+
+        <h2 class="h2">다운로드파일 등록</h2>
+
+        <div class="ui-table-view">
+            <table>
+                <colgroup>
+                    <col style="width: 170px">
+                    <col>
+                    <col style="width: 170px">
+                    <col>
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th scope="row">기존 PDF 파일</th>
+                        <td>
+                            <span class="attachedFile">
+                                <a href="#">031_보험계약대출신청_약정동의.jpg</a>
+                                <button type="button"><span>삭제</span></button>
+                            </span>
+                        </td>
+                        <th scope="row">교체 PDF 파일</th>
+                        <td><input type="file"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">기존 AI 파일</th>
+                        <td>
+                            <span class="attachedFile">
+                                <a href="#">031_보험계약대출신청_약정동의.jpg</a>
+                                <button type="button"><span>삭제</span></button>
+                            </span>
+                        </td>
+                        <th scope="row">교체 AI 파일</th>
+                        <td><input type="file"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">기존 JPG 파일</th>
+                        <td>
+                            <span class="attachedFile">
+                                <a href="#">031_보험계약대출신청_약정동의.jpg</a>
+                                <button type="button"><span>삭제</span></button>
+                            </span>
+                        </td>
+                        <th scope="row">교체 JPG 파일</th>
+                        <td><input type="file"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">기존 FONT 파일</th>
+                        <td>
+                            <span class="attachedFile">
+                                <a href="#">DB고딕.ttf</a>
+                                <button type="button"><span>삭제</span></button>
+                            </span>
+                        </td>
+                        <th scope="row">교체 FONT 파일</th>
+                        <td><input type="file"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="ui-btn-wrap">
+            <div>
+                <a href="./DBAD040101.html" class="btn btn-default"><span>목록</span></a>
+                <button type="button" class="btn btn-primary"><span>저장</span></button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script>
+    // 메뉴 활성화
+    $plugins.mymenu.init(3,2);
+</script>
+
+</body>
+</html>

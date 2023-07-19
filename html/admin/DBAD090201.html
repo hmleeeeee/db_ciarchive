@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <title>이용/통계 현황</title>
+    <script src="/resource/admin/js/lib/jquery-3.2.1.min.js"></script>
+    <script src="/resource/admin/js/netive.ui.common.js"></script><!-- namespace, device check -->
+    <script src="/resource/admin/js/ui.common.js"></script><!-- UI script -->
+    <link rel="stylesheet" href="/resource/admin/css/ui.common.css">
+    
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+</head>
+<body>
+
+<div class="admin_wrap">
+
+    <!-- navigation -->
+    <div id="inc_navi"></div>
+
+    <!-- content -->
+    <div class="admin_content">
+        <h1 class="h1">CI 가이드 이용현황</h1>
+        
+        <div class="ui-search">
+            <select>
+                <option value="">Depth1 전체</option>
+            </select>
+            <select>
+                <option value="">Depth2 전체</option>
+            </select>
+
+            <input type="text" class="datepicker"> -
+            <input type="text" class="datepicker">
+
+            <div class="ui-btn-wrap">
+                <div>
+                    <button type="button" class="btn btn-primary"><span>조회</span></button>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="ui-btn-wrap">
+            <div>
+                <button type="button" class="btn btn-default"><span>엑셀 다운로드</span></button>
+            </div>
+            <div></div>
+        </div>
+
+        <div class="ui-table-list">
+            <table>
+                <colgroup>
+                    <col>
+                    <col>
+                    <col>
+                    <col style="width: 12%">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th scope="col">Depth 1</th>
+                        <th scope="col">Depth 2</th>
+                        <th scope="col">Depth 3</th>
+                        <th scope="col">조회수</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Basic System</td>
+                        <td>Identifier</td>
+                        <td>DB Identifier</td>
+                        <td class="text_center">-</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>Symbol Mark</td>
+                        <td class="text_center">100</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+</div>
+
+<script>
+    // 메뉴 활성화
+    $plugins.mymenu.init(8,2);
+
+    $(function() {
+        $( ".datepicker" ).datepicker({
+            dateFormat: 'yy-mm-dd'
+        });
+    });
+</script>
+
+</body>
+</html>

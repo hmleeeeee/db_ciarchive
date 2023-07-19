@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>회원가입 | 계정신청</title>
+  <script src="/resource/service/js/lib/jquery-3.2.1.min.js"></script>
+  <script src="/resource/service/js/netive.ui.common.js"></script>
+  <script src="/resource/service/js/ui.common.js"></script>
+  <link rel="stylesheet" href="/resource/service/css/ui.common.css">
+  <link rel="stylesheet" href="/resource/service/css/ui.content.css">
+  <link rel="stylesheet" href="/resource/service/css/ui.mobile.css">
+</head>
+<body class="bg_gray">
+  <main class="service_wrap signup">
+    <section class="service_container">
+      <div class="page_logo">
+        <h1><a href="./DBCI010101.html"><span class="hide">DB CI Archive System</span></a></h1>
+      </div>
+      <article class="signup_form">
+        <div class="form_head">
+          <h2>그룹사 계정신청</h2>
+          <p class="desc">사용하실 계정에 대한 정보를 입력해주세요.<br>신청하신 계정은 관리자 확인 후 사용하실 수 있습니다.</p>
+        </div>
+        <form action="#">
+          <div class="area">
+            <span class="label essential"><label for="email">이메일(아이디)</label></span>
+            <div class="input_box inbtn">
+              <input type="email" id="email" placeholder="회사 이메일 입력">
+              <button type="button" class="btn c3 on">이메일 인증</button>
+            </div>
+          </div>
+          <!-- 이메일 인증 버튼 클릭시 인증번호 입력 폼 -->
+          <div class="input_box inbtn confirm">
+            <input type="text" placeholder="인증번호 입력"><span class="valid">유효시간 0분 0초</span>
+            <button type="button" class="btn c3 on">인증번호 확인</button> <!--인증번호 확인완료시 add clas 'on' 부여-->
+            <p class="txt">인증번호를 발송했습니다.</p>
+          </div>
+          <!-- //이메일 인증 버튼 클릭시 인증번호 입력 폼 -->
+          <div class="area">
+            <span class="label essential"><label for="password">비밀번호</label></span>
+            <div class="input_box">
+              <input type="password" id="password" placeholder="영문, 숫자, 특수문자 중 2개 이상 조합하여 8~20자" maxlength="20" value="textpassword">
+            </div>
+          </div>
+          <div class="area">
+            <span class="label essential"><label for="passwrodChk">비밀번호 확인</label></span>
+            <div class="input_box">
+              <input type="password" id="passwrodChk" placeholder="영문, 숫자, 특수문자 중 2개 이상 조합하여 8~20자" maxlength="20" value="textpassword">
+            </div>
+          </div>
+          <div class="area">
+            <span class="label essential"><label for="name">성명</label></span>
+            <div class="input_box">
+              <input type="text" id="name" placeholder="이름을 입력하세요" value="홍길동">
+            </div>
+          </div>
+          <div class="area">
+            <span class="label essential">소속사</span>
+            <div class="ui-selectbox">
+              <select name="group" title="소속사 선택">
+                <option value="option1">선택</option>
+                <option value="option2">DB그룹</option>
+                <option value="option3">DB생명</option>
+                <option value="option4" selected>DB손해보험</option>
+                <option value="option5">DB금융투자</option>
+                <option value="option5">DB자산운용</option>
+                <option value="option5">DB저축은행</option>
+                <option value="option5">DB캐피탈</option>
+                <option value="option5">DB하이텍</option>
+                <option value="option5">DB메탈</option>
+                <option value="option5">DB Inc</option>
+                <option value="option5">DB FIS</option>
+                <option value="option5">DB 월드</option>
+              </select>
+            </div>
+          </div>
+          <div class="area">
+            <span class="label essential"><label for="teamName">부서명</label></span>
+            <div class="input_box"><input type="text" id="teamName" placeholder="부서명을 입력하세요" value="마케팅 1팀"></div>
+          </div>
+          <div class="area">
+            <span class="label essential"><label for="position">직급</label></span>
+            <div class="input_box"><input type="text" id="position" placeholder="직급을 입력하세요" value="과장"></div>
+          </div>
+          <span class="label essential">휴대폰 번호</span>
+          <div class="area col_grid phone">
+            <div class="ui-selectbox">
+              <select name="phoneNum" title="그룹사 선택">
+                <option value="010">010</option>
+                <option value="011">011</option>
+                <option value="016">016</option>
+                <option value="017">017</option>
+                <option value="018">018</option>
+                <option value="019">019</option>
+              </select>
+            </div>
+            <div class="input_box"><input type="text"></div>
+            <div class="input_box"><input type="text"></div>
+          </div>
+          <div class="area">
+            <span class="label essential"><label for="recEmail">추천인 아이디(이메일)</label></span>
+            <div class="input_box">
+              <input type="email" id="recEmail" placeholder="이메일 입력" value="dbtest@gmail.com">
+            </div>
+          </div>
+        </form>
+        <div class="btn_wrap">
+          <a href="DBCI010303.html" class="btn c1">계정 신청하기</a>
+        </div>
+      </article>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <title>CI Guide 관리</title>
+    <script src="/resource/admin/js/lib/jquery-3.2.1.min.js"></script>
+    <script src="/resource/admin/js/netive.ui.common.js"></script><!-- namespace, device check -->
+    <script src="/resource/admin/js/ui.common.js"></script><!-- UI script -->
+    <link rel="stylesheet" href="/resource/admin/css/ui.common.css">
+</head>
+<body>
+
+<div class="admin_wrap">
+
+    <!-- navigation -->
+    <div id="inc_navi"></div>
+
+    <!-- content -->
+    <div class="admin_content">
+        <h1 class="h1">가이드메뉴 관리</h1>
+        
+        <div class="ui-search">
+            <select>
+                <option value="">Depth1 전체</option>
+            </select>
+            <select>
+                <option value="">Depth2 전체</option>
+            </select>
+
+            <div class="ui-btn-wrap">
+                <div>
+                    <button type="button" class="btn btn-primary"><span>조회</span></button>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <h2 class="h2">가이드 순번 설정</h2>
+
+        <p class="ui-list-dot">
+            순번 수정 후 <strong>[저장]</strong> 시 에만 적용됩니다.
+        </p>
+
+        <div class="ui-table-list">
+            <table>
+                <colgroup>
+                    <col style="width: 60%;">
+                    <col style="width: 40%;">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th scope="col">메뉴명</th>
+                        <th scope="col">순번</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Basic System</td>
+                        <td class="text_center"><input type="text" class="order_number"></td>
+                    </tr>
+                    <tr>
+                        <td>Application System</td>
+                        <td class="text_center"><input type="text" class="order_number"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="ui-btn-wrap">
+            <div>
+                <a href="./DBAD040101.html" class="btn btn-default"><span>목록</span></a>
+                <button type="button" class="btn btn-primary"><span>저장</span></button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script>
+    // 메뉴 활성화
+    $plugins.mymenu.init(3,1);
+</script>
+
+</body>
+</html>

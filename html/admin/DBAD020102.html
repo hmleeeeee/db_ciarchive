@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <title>계열사/협력사 관리</title>
+    <script src="/resource/admin/js/lib/jquery-3.2.1.min.js"></script>
+    <script src="/resource/admin/js/netive.ui.common.js"></script><!-- namespace, device check -->
+    <script src="/resource/admin/js/ui.common.js"></script><!-- UI script -->
+    <link rel="stylesheet" href="/resource/admin/css/ui.common.css">
+</head>
+<body>
+
+<div class="admin_wrap">
+
+    <!-- navigation -->
+    <div id="inc_navi"></div>
+
+    <!-- content -->
+    <div class="admin_content">
+        <h1 class="h1">계열사/협력사 관리</h1>
+        <h2 class="h2">기업정보</h2>
+
+        <div class="ui-table-view">
+            <table>
+                <tbody>
+                    <tr>
+                        <th scope="row">기업명</th>
+                        <td><input type="text"></td>
+                        <th scope="row">기업구분</th>
+                        <td>
+                            <select>
+                                <option value="">선택</option>
+                                <option value="">계열사</option>
+                                <option value="">협력사</option>
+                                <option value="">기타</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">사업자등록번호</th>
+                        <td>
+                            <input type="text" class="company_number1"> -
+                            <input type="text" class="company_number2"> -
+                            <input type="text" class="company_number3">
+                        </td>
+                        <th scope="row">사업자구분</th>
+                        <td>
+                            <select>
+                                <option value="">선택</option>
+                                <option value="">개인사업자</option>
+                                <option value="">법인사업자</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">대표전화번호</th>
+                        <td><input type="text"></td>
+                        <th scope="row">대표자명</th>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">주소</th>
+                        <td colspan="3"><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">홈페이지</th>
+                        <td colspan="3"><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">기업 CI 이미지</th>
+                        <td colspan="3"><input type="file"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="ui-btn-wrap">
+            <div>
+                <a href="./DBAD020101.html" class="btn btn-default"><span>목록</span></a>
+                <button type="button" class="btn btn-primary"><span>저장</span></button>
+                <button type="button" class="btn btn-default"><span>삭제</span></button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script>
+    // 메뉴 활성화
+    $plugins.mymenu.init(1,1);
+</script>
+
+</body>
+</html>

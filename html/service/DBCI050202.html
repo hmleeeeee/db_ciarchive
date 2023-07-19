@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>상표권 침해 신고</title>
+  <script src="/resource/service/js/lib/jquery-3.2.1.min.js"></script>
+  <script src="/resource/service/js/netive.ui.common.js"></script>
+  <script src="/resource/service/js/ui.common.js"></script>
+  <link rel="stylesheet" href="/resource/service/css/ui.common.css">
+  <link rel="stylesheet" href="/resource/service/css/ui.content.css">
+  <link rel="stylesheet" href="/resource/service/css/ui.mobile.css">
+</head>
+<body class="bg_gray">
+  <main class="service_wrap signup terms">
+    <section class="service_container">
+      <div class="page_logo">
+        <h1><a href="./DBCI010101.html"><span class="hide">DB CI Archive System</span></a></h1>
+      </div>
+      <article class="signup_form">
+        <div class="form_head">
+          <h2>상표권 침해 신고 약관동의</h2>
+          <p class="desc">약관과 개인정보처리방침을 읽어보신 후<br>신고를 계속 진행하세요.</p>
+        </div>
+        <div class="area">
+          <span class="label">개인정보 수집 및 이용수칙(필수)</span>
+          <div class="ui-textarea">
+            <textarea id="privacyPolicy" name="name" rows="5" cols="52"></textarea>
+            <script>
+              $("#privacyPolicy").load("terms/privacyPolicy.html");
+            </script>
+          </div>
+        </div>
+        <div class="area">
+          <span class="label">브랜드관리사이트 개인정보 처리방침(필수)</span>
+          <div class="ui-textarea">
+            <textarea id="bmPrivacyPolicy" name="name" rows="5" cols="52"></textarea>
+            <script>
+              $("#bmPrivacyPolicy").load("terms/bmPrivacyPolicy.html");
+            </script>
+          </div>
+        </div>
+        <div class="area">
+          <span class="label">인트라넷 이용약관(필수)</span>
+          <div class="ui-textarea">
+            <textarea id="intranetTerms" name="name" rows="5" cols="52"></textarea>
+            <script>
+              $("#intranetTerms").load("terms/intranetTerms.html");
+            </script>
+          </div>
+        </div>
+        <div class="ui-chkbox">
+          <input type="checkbox" id="allChk" name="allchk" class="ui-chk kfani">
+          <label for="allChk"><span></span><em>개인정보 수집 및 이용수칙, 브랜드관리사이트 개인정보처리방침, 인트라넷 이용약관을 모두 읽었으며, 내용에 동의합니다.</em></label>
+        </div>
+        <div class="btn_wrap">
+          <a href="DBCI050203.html" class="btn btn-main c1">다음</a>
+        </div>
+      </article>
+    </section>
+  </main>
+</body>
+</html>

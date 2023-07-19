@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <title>신청반려 현황</title>
+    <script src="/resource/admin/js/lib/jquery-3.2.1.min.js"></script>
+    <script src="/resource/admin/js/netive.ui.common.js"></script><!-- namespace, device check -->
+    <script src="/resource/admin/js/ui.common.js"></script><!-- UI script -->
+    <link rel="stylesheet" href="/resource/admin/css/ui.common.css">
+</head>
+<body>
+
+<div class="admin_wrap">
+
+    <!-- navigation -->
+    <div id="inc_navi"></div>
+
+    <!-- content -->
+    <div class="admin_content">
+        <h1 class="h1">신청반려 현황</h1>
+        <h2 class="h2">계정정보</h2>
+
+        <div class="ui-table-view">
+            <table>
+                <colgroup>
+                    <col style="width: 170px">
+                    <col>
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th scope="row">아이디(이메일)</th>
+                        <td>abc123@dbgroup.co.kr</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">소속사명</th>
+                        <td>DB생명</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">부서</th>
+                        <td>마케팅1팀</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">이름</th>
+                        <td>홍길동</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">직급</th>
+                        <td>과장</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">전화번호</th>
+                        <td>010-1234-5678</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">추천인아이디(이메일)</th>
+                        <td>1234dbab@dbgroup.co.kr</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">가입 승인일</th>
+                        <td>2020/08/05</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="ui-btn-wrap">
+            <div>
+                <a href="./DBAD030301.html" class="btn btn-default"><span>목록</span></a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script>
+    // 메뉴 활성화
+    $plugins.mymenu.init(2,3);
+</script>
+
+</body>
+</html>

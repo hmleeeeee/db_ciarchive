@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>회원탈퇴</title>
+  <script src="/resource/service/js/lib/jquery-3.2.1.min.js"></script>
+    <script src="/resource/service/js/lib/jquery-ui.js"></script>
+  <script src="/resource/service/js/netive.ui.common.js"></script>
+  <script src="/resource/service/js/ui.common.js"></script>
+  <link rel="stylesheet" href="/resource/service/css/lib/jquery-ui.css">
+  <link rel="stylesheet" href="/resource/service/css/ui.common.css">
+  <link rel="stylesheet" href="/resource/service/css/ui.content.css">
+  <link rel="stylesheet" href="/resource/service/css/ui.mobile.css">
+</head>
+<body>
+  <main class="service_wrap mypage_edit">
+    <!-- header -->
+    <header id="inc_header"></header>
+    <!-- //header -->
+    <!-- container -->
+    <section class="service_container">
+      <div class="page_head">
+        <div>
+          <h1>회원탈퇴</h1>
+        </div>
+      </div>
+      <article class="service_article">
+        <div class="breadcrumbs">
+          <ul class="breadcrumb">
+            <li><a href="./index.html" class="home"><span class="hide">home</span></a></li>
+            <li><a href="./DBCI070101.html"><em class="en">My Page</em></a></li>
+            <li><a href="./DBCI070401.html">회원정보수정</a></li>
+            <li><a href="./DBCI070405.html" class="active">회원탈퇴</a></li>
+          </ul>
+        </div>
+        <div class="page_cont withdrawal">
+          <div class="cont_tit"><h2 class="title">회원탈퇴</h2></div>
+          <p class="sub_tit">
+            탈퇴 후에는 해당 아이디(이메일)로 <em>재가입이 불가능 하며</em><br class="pc_block">
+            고객의 개인정보 및 기존의 문의/신고 내용을 <em>복구할 수 없습니다.</em>
+          </p>
+          <p class="caption ui-list-star">필수 입력 항목</p>
+          <div class="form_inline">
+            <div class="form_item">
+              <div class="flex_item">
+                <label for="password" class="form_label essential">비밀번호 입력</label>
+                <div class="input_box"><input type="password" id="password" placeholder="기존 비밀번호 입력" maxlength="20"></div>
+              </div>
+              <div class="flex_item">
+                <label for="withdrawal" class="form_label essential">탈퇴사유</label>
+                <div class="ui-textarea">
+                  <textarea id="withdrawal" name="name" rows="8" cols="80" placeholder="탈퇴사유를 입력하세요."></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="btn-center">
+              <div class="ui-chkbox">
+                <input type="checkbox" id="allChk" name="allchk" class="ui-chk">
+                <label for="allChk"><span></span><em>안내 사항을 모두 확인하였으며, 이에 동의합니다.(필수)</em></label>
+              </div>
+              <a href="DBCI010101.html" class="btn c1">회원탈퇴</a>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+    <!-- //container -->
+    <footer id="inc_footer"></footer>
+  </main>
+</body>
+</html>

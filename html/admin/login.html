@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <title>LOGIN</title>
+    <script src="/resource/admin/js/lib/jquery-3.2.1.min.js"></script>
+    <script src="/resource/admin/js/netive.ui.common.js"></script>
+    <script src="/resource/admin/js/ui.common.js"></script>
+    <link rel="stylesheet" href="/resource/admin/css/ui.common.css">
+</head>
+<body>
+
+<div class="login_wrap">
+    <article class="login_content">
+        <header>
+            <h1 class="h1">Login</h1>
+            <p>아이디, 비밀번호를 넣고 로그인 하세요.</p>
+        </header>
+
+        <div class="login_form">
+            <dl>
+                <dt>User ID</dt>
+                <dd><input type="text" placeholder="아이디를 입력하세요"></dd>
+                <dt>Password</dt>
+                <dd><input type="password" placeholder="비밀번호를 입력하세요"></dd>
+            </dl>
+            
+            <div class="ui-btn-wrap">
+                <div>
+                    <button type="button" class="btn btn-primary"><span>로그인</span></button>
+                </div>
+            </div>
+            <div class="btn_reset">
+                <a href="#modal_pwdreset" class="ui-modal"><span>관리자 비밀번호 초기화</span></a>
+            </div>
+        </div>
+    </article>
+</div>
+
+<div class="ui-modal-wrap" id="modal_pwdreset">
+    <div class="ui-modal-content">
+        <h1 class="h1">관리자 비밀번호 초기화</h1>
+
+        <div class="ui-table-view">
+            <table>
+                <tbody>
+                    <tr>
+                        <th scope="row">아이디(이메일)</th>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">이름</th>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">사번</th>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">휴대폰번호</th>
+                        <td><input type="text"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <p class="ui-list-dot">
+            초기화 비밀번호는 ‘<strong>db123!@#</strong>’ 입니다.
+        </p>
+
+        <div class="ui-btn-wrap">
+            <div>
+                <button type="button" class="btn btn-primary"><span>초기화</span></button>
+                <a href="#" class="btn btn-default btn-close"><span>닫기</span></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

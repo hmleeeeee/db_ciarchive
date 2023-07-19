@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>상표권 침해 신고</title>
+  <script src="/resource/service/js/lib/jquery-3.2.1.min.js"></script>
+  <script src="/resource/service/js/netive.ui.common.js"></script>
+  <script src="/resource/service/js/ui.common.js"></script>
+  <link rel="stylesheet" href="/resource/service/css/ui.common.css">
+  <link rel="stylesheet" href="/resource/service/css/ui.content.css">
+  <link rel="stylesheet" href="/resource/service/css/ui.mobile.css">
+</head>
+<body class="bg_gray">
+  <main class="service_wrap signup">
+    <section class="service_container">
+      <div class="page_logo">
+        <h1><a href="./DBCI010101.html"><span class="hide">DB CI Archive System</span></a></h1>
+      </div>
+      <article class="signup_form">
+        <div class="form_head">
+          <h2>상표권 침해 신고 정보입력</h2>
+          <p class="desc">상표권 침해 신고를 위해<br class="m_block"> 신고자의 정보를 입력해주세요.</p>
+        </div>
+        <form action="#">
+          <div class="area">
+            <span class="label essential"><label for="email">신고자 이메일</label></span>
+            <div class="input_box">
+              <input type="email" id="email" placeholder="이메일 입력" />
+              <span class="ui-list-star ex">신고내용에 대한 답변이 해당 메일로 발송됩니다.</span>
+            </div>
+          </div>
+          <div class="area">
+            <span class="label essential"><label for="name">성명</label></span>
+            <div class="input_box">
+              <input type="text" id="name" placeholder="이름 입력" />
+            </div>
+          </div>
+          <div class="area">
+            <span class="label essential"><label for="group">소속사</label></span>
+            <div class="input_box">
+              <input type="text" id="group" placeholder="소속사 입력" />
+            </div>
+          </div>
+          <div class="area">
+            <span class="label essential"><label for="teamName">부서명</label></span>
+            <div class="input_box">
+              <input type="text" id="teamName" placeholder="부서명 입력">
+            </div>
+          </div>
+          <div class="area">
+            <span class="label essential"><label for="position">직급</label></span>
+            <div class="input_box">
+              <input type="text" id="position" placeholder="직급 입력">
+            </div>
+          </div>
+          <span class="label essential">휴대폰 번호</span>
+          <div class="area col_grid phone">
+            <div class="ui-selectbox">
+              <select name="group" title="그룹사 선택">
+                <option value="010" selected>010</option>
+                <option value="011">011</option>
+                <option value="016">016</option>
+                <option value="017">017</option>
+                <option value="018">018</option>
+                <option value="019v">019</option>
+              </select>
+            </div>
+            <div class="input_box">
+              <input type="text" maxlength="4">
+            </div>
+            <div class="input_box">
+              <input type="text" maxlength="4">
+            </div>
+          </div>
+        </form>
+        <div class="btn_wrap">
+          <a href="DBCI050204.html" class="btn btn-main c1">다음</a>
+        </div>
+      </article>
+    </section>
+  </main>
+</body>
+</html>

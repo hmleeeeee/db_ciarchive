@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <title>게시판 관리</title>
+    <script src="/resource/admin/js/lib/jquery-3.2.1.min.js"></script>
+    <script src="/resource/admin/js/netive.ui.common.js"></script><!-- namespace, device check -->
+    <script src="/resource/admin/js/ui.common.js"></script><!-- UI script -->
+    <link rel="stylesheet" href="/resource/admin/css/ui.common.css">
+    
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+</head>
+<body>
+
+<div class="admin_wrap">
+
+    <!-- navigation -->
+    <div id="inc_navi"></div>
+
+    <!-- content -->
+    <div class="admin_content">
+        <h1 class="h1">게시판</h1>
+        <h2 class="h2">게시글 작성</h2>
+
+        <div class="ui-table-view">
+            <table>
+                <colgroup>
+                    <col style="width: 170px">
+                    <col>
+                    <col style="width: 170px">
+                    <col>
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th scope="row">작성자아이디(이메일)</th>
+                        <td>abc123@dbgroup.co.kr</td>
+                        <th scope="row">최종수정일</th>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">구분</th>
+                        <td>
+                            <select>
+                                <option value="">활용사례</option>
+                                <option value="">자료실</option>
+                                <option value="">공지사항</option>
+                            </select>
+                        </td>
+                        <th scope="row">개시여부</th>
+                        <td>
+                            <select>
+                                <option value="">Y</option>
+                                <option value="">N</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">상단고정노출</th>
+                        <td>
+                            <select>
+                                <option value="">Y</option>
+                                <option value="">N</option>
+                            </select>
+                        </td>
+                        <th scope="row">노출기간설정</th>
+                        <td>
+                            <input type="text" class="datepicker"> -
+                            <input type="text" class="datepicker">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">글제목</th>
+                        <td colspan="3"><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">첨부파일</th>
+                        <td colspan="3"><input type="file"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">내용</th>
+                        <td colspan="3">
+                            <textarea></textarea>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="ui-btn-wrap">
+            <div>
+                <a href="./DBAD070101.html" class="btn btn-default"><span>목록</span></a>
+                <button type="button" class="btn btn-primary"><span>저장</span></button>
+                <button type="button" class="btn btn-default"><span>삭제</span></button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script>
+    // 메뉴 활성화
+    $plugins.mymenu.init(6,1);
+
+    $(function() {
+        $( ".datepicker" ).datepicker({
+            dateFormat: 'yy-mm-dd'
+        });
+    });
+</script>
+
+</body>
+</html>

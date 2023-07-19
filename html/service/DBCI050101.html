@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>상표권 침해 신고</title>
+  <script src="/resource/service/js/lib/jquery-3.2.1.min.js"></script>
+  <script src="/resource/service/js/netive.ui.common.js"></script>
+  <script src="/resource/service/js/ui.common.js"></script>
+  <link rel="stylesheet" href="/resource/service/css/ui.common.css">
+  <link rel="stylesheet" href="/resource/service/css/ui.content.css">
+  <link rel="stylesheet" href="/resource/service/css/ui.mobile.css">
+</head>
+<body>
+  <main class="service_wrap">
+    <!-- header -->
+    <header id="inc_header"></header>
+    <!-- //header -->
+    <!-- container -->
+    <section class="service_container">
+      <div class="page_head">
+        <div>
+          <h1>상표권 침해 신고</h1>
+          <p>상표권 침해와 관련된 사례들을 신고해주세요.</p>
+        </div>
+      </div>
+      <article class="service_article">
+        <div class="breadcrumbs">
+          <ul class="breadcrumb">
+            <li><a href="./index.html" class="home"><span class="hide">home</span></a></li>
+            <li><a href="./DBCI050101.html">상표권 침해 신고</a></li>
+            <li><a href="./DBCI050101.html" class="active">상표권 침해 신고</a></li>
+          </ul>
+        </div>
+        <div class="page_cont">
+          <div class="cont_tit"><h2 class="title">상표권 침해 신고</h2></div>
+          <p class="caption ui-list-star">필수 입력 항목</p>
+          <div class="form_inline">
+            <div class="form_item">
+              <div class="item">
+                <span class="form_label essential"><label for="title">제목</label></span>
+                <div>
+                  <input type="text" id="title" placeholder="제목을 입력하세요.">
+                </div>
+              </div>
+              <div class="item">
+                <span class="form_label essential"><label for="ifType">침해 유형</label></span>
+                <div>
+                  <input type="text" id="ifType" placeholder="침해 유형을 입력하세요.">
+                  <p class="ui-list-star ex">예시 : 「유사 상표를 사용하는 업체 신고」, 「"DB"상표가 사용된 불법 어플리케이션 신고」 등</p>
+                </div>
+              </div>
+              <div class="item">
+                <span class="form_label essential">침해사실 발견 시점</span>
+                <p><input type="text" class="datepicker" value="2020-09-15" disabled></p>
+              </div>
+              <div class="item">
+                <span class="form_label essential"><label for="ifPlace">침해사실 발견 장소</label></span>
+                <div>
+                  <input type="text" id="ifPlace" placeholder="침해사실 발견 장소를 입력하세요.">
+                  <p class="ui-list-star ex">온라인의 경우 해당 URL, 오프라인의 경우 지역을 기재</p>
+                </div>
+              </div>
+              <div class="item">
+                <span class="form_label essential"><label for="ifCont">침해 내용</label></span>
+                <div class="ui-textarea">
+                  <textarea name="name" rows="8" cols="80" id="ifCont" placeholder="신고하실 침해 내용을 입력하세요."></textarea>
+                </div>
+              </div>
+              <div class="item">
+                <span class="form_label">첨부파일</span>
+                <!-- 파일첨부 태그 -->
+                <div class="ui-file">
+                  <span for="attach" class="btn-file">파일 업로드<input type="file" class="multi MultiFile-applied"></span>
+                  <span class="ui-list-mark">침해 신고와 관련된 사진 등 증빙 자료가 있을 시 첨부해주세요.</span>
+                  <div class="MultiFile-wrap">
+                    <div class="MultiFile-list">
+                      <div class="MultiFile-label">
+                        <a href="#" class="MultiFile-remove">x</a>
+                        <span><span class="MultiFile-label"><span class="MultiFile-title">판촉물 샘플.jpg</span></span></span>
+                      </div>
+                      <div class="MultiFile-label">
+                        <a href="#" class="MultiFile-remove">x</a>
+                        <span><span class="MultiFile-label"><span class="MultiFile-title">판촉물 샘플 모음.pdf</span></span></span>
+                      </div>
+                      <div class="MultiFile-label">
+                        <a href="#" class="MultiFile-remove">x</a>
+                        <span><span class="MultiFile-label"><span class="MultiFile-title">판촉물 샘플 설명.doc</span></span></span>
+                      </div>
+                    </div>
+                    <div class="attachedMore"><label for="#" class="addFile">+</label></div>
+                  </div>
+                </div>
+                <!-- //파일첨부 태그 -->
+              </div>
+            </div>
+            <div class="sub_desc">
+              <p class="ui-list-dot">상표권 침해 여부에 대해 궁금한 사항이나 초안 등을 작성해 주시면, 침해 여부를 신속히 안내해 드리겠습니다. </p>
+              <p class="ui-list-dot">상표권 침해에 대한 다양한 활용사례 등을 통해 유사한 내역을 확인하실 수 있습니다.</p>
+            </div>
+            <div class="btn_wrap">
+              <button type="button" class="btn c2">취소</button>
+              <a href="DBCI050102.html" class="btn c1">저장</a>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+    <!-- //container -->
+    <footer id="inc_footer"></footer>
+  </main>
+
+  <script src="/resource/service/js/lib/jquery-ui.js"></script>
+  <link rel="stylesheet" href="/resource/service/css/lib/jquery-ui.css">
+  <script>
+  $( function() {
+      $( ".datepicker" ).datepicker({
+        showOn: "button",
+        buttonImage: "/resource/service/images/common/ico-calendar.png",
+        buttonImageOnly: true,
+        buttonText: "Select date",
+        dateFormat: 'yy-mm-dd'
+      });
+    } );
+  </script>
+</body>
+</html>

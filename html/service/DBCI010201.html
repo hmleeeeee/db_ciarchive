@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>로그인</title>
+  <script src="/resource/service/js/lib/jquery-3.2.1.min.js"></script>
+  <script src="/resource/service/js/netive.ui.common.js"></script>
+  <script src="/resource/service/js/ui.common.js"></script>
+  <link rel="stylesheet" href="/resource/service/css/ui.common.css">
+  <link rel="stylesheet" href="/resource/service/css/ui.content.css">
+  <link rel="stylesheet" href="/resource/service/css/ui.mobile.css">
+</head>
+<body>
+  <main class="service_wrap login">
+    <!-- container -->
+    <section class="service_container">
+      <div class="page_logo">
+        <h1><a href="./DBCI010101.html"><span class="hide">DB CI Archive System</span></a></h1>
+      </div>
+      <article class="login_form">
+        <div class="form_head">
+          <h2>로그인</h2>
+          <p class="desc">회사 이메일 주소를 이용하셔서<br>로그인하시기 바랍니다.</p>
+        </div>
+        <div class="input_box">
+          <input type="email" placeholder="회사 이메일 주소">
+        </div>
+        <div class="input_box">
+          <input type="password" placeholder="Password">
+        </div>
+        <div class="btn_wrap">
+          <button type="button" class="btn c1">로그인</button>
+        </div>
+        <div class="util">
+          <a href="#modal_pwdreset" class="ui-modal">비밀번호를 잊으셨나요?</a>
+          <a href="DBCI010301.html">회원가입 신청</a>
+        </div>
+      </article>
+    </section>
+    <!-- //container -->
+    <!-- footer -->
+    <footer id="inc_footer"></footer>
+    <!-- //footer -->
+
+    <!-- 임시 비밀번호 발송 팝업 -->
+    <article id="modal_pwdreset" class="ui-modal-wrap">
+      <div class="ui-modal-content">
+          <div class="ui-modal-tit">
+            <h1>임시 비밀번호 발송<a href="#" class="btn-close"><span class="hide">닫기</span></a></h1>
+          </div>
+          <div class="ui-modal-view">
+            <div class="area ui-selectbox">
+              <span class="label essential"><label for="group">소속사</label></span>
+              <select id="group" name="group" title="소속사 선택">
+                <option value="소속사 선택" selected>선택</option>
+                <option value="DB그룹">DB그룹</option>
+                <option value="DB생명">DB생명</option>
+                <option value="DB손해보험">DB손해보험</option>
+                <option value="DB금융투자">DB금융투자</option>
+                <option value="DB자산운용">DB자산운용</option>
+                <option value="DB저축은행">DB저축은행</option>
+                <option value="DB캐피탈">DB캐피탈</option>
+                <option value="DB하이텍">DB하이텍</option>
+                <option value="DB메탈">DB메탈</option>
+                <option value="DB Inc">DB Inc</option>
+                <option value="DB FIS">DB FIS</option>
+                <option value="DB 월드">DB 월드</option>
+              </select>
+            </div>
+            <div class="area">
+              <span class="label essential"><label for="email">이메일(아이디)</label></span>
+              <input type="email" id="email" placeholder="회사 이메일 입력">
+            </div>
+            <div class="area">
+              <span class="label essential"><label for="name">성명</label></span>
+              <input type="text" id="name" placeholder="이름 입력">
+            </div>
+            <div class="area">
+              <span class="label essential">휴대폰 번호</span>
+                <div class="col_grid phone">
+                  <div class="ui-selectbox">
+                    <select name="group" title="그룹사 선택">
+                      <option value="010" selected>010</option>
+                      <option value="011">011</option>
+                      <option value="016">016</option>
+                      <option value="017">017</option>
+                      <option value="018">018</option>
+                      <option value="019v">019</option>
+                    </select>
+                  </div>
+                  <div class="input_box"><input type="text"></div>
+                  <div class="input_box"><input type="text"></div>
+              </div>
+            </div>
+            <p class="ui-list-star ex">가입 시 인증된 회원님의 이메일 주소로<br class="m_block"> 임시 비밀번호가 발송됩니다.</p>
+            <div class="btn-center"><button type="button" class="btn c1">발송</button></div>
+        </div>
+      </div>
+    </article>
+  <!-- // 임시 비밀번호 발송 팝업 -->
+  </main>
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CI 적용 문의</title>
+  <script src="/resource/service/js/lib/jquery-3.2.1.min.js"></script>
+    <script src="/resource/service/js/lib/jquery-ui.js"></script>
+  <script src="/resource/service/js/netive.ui.common.js"></script>
+  <script src="/resource/service/js/ui.common.js"></script>
+  <link rel="stylesheet" href="/resource/service/css/lib/jquery-ui.css">
+  <link rel="stylesheet" href="/resource/service/css/ui.common.css">
+  <link rel="stylesheet" href="/resource/service/css/ui.content.css">
+  <link rel="stylesheet" href="/resource/service/css/ui.mobile.css">
+</head>
+<body>
+  <main class="service_wrap">
+    <!-- header -->
+    <header id="inc_header"></header>
+    <!-- //header -->
+    <!-- container -->
+    <section class="service_container">
+      <div class="page_head">
+        <div>
+          <h1><em class="en">CI</em> 적용 문의</h1>
+          <p><em class="en">CI</em>를 적용하실 때 궁금하신 점이 있으면 문의하시기 바랍니다.</p>
+        </div>
+      </div>
+      <article class="service_article">
+        <div class="breadcrumbs">
+          <ul class="breadcrumb">
+            <li><a href="./DBCI010101.html" class="home"><span class="hide">home</span></a></li>
+            <li><a href="./DBCI090101.html"><em class="en">CI</em> 적용 문의</a></li>
+            <li><a href="./DBCI090101.html" class="active"><em class="en">CI</em> 적용 문의</a></li>
+          </ul>
+        </div>
+        <div class="page_cont">
+          <div class="cont_tit"><h2 class="title"><em class="en">CI</em> 적용 문의</h2></div>
+          <p class="caption ui-list-star">필수 입력 항목</p>
+          <div class="form_inline">
+            <div class="form_item">
+              <div class="item">
+                <span class="form_label essential">
+                  <label for="title">제목</label>
+                </span>
+                <div>
+                  <input type="text" id="title" placeholder="제목을 입력하세요.">
+                </div>
+              </div>
+              <div class="item">
+                <span class="form_label essential">적용매체</span>
+                <div class="multi_ul">
+                  <ul class="form_flex">
+                    <li>
+                      <input type="radio" id="media1" name="media" checked>
+                      <label for="media1"><span></span>인쇄물 (신문, 잡지 등)</label>
+                    </li>
+                    <li>
+                      <input type="radio" id="media2" name="media">
+                      <label for="media2"><span></span>영상물 (TV광고, 교육영상 등)</label>
+                    </li>
+                    <li>
+                      <input type="radio" id="media3" name="media">
+                      <label for="media3"><span></span>온라인(홈페이지, App, SNS 등)</label>
+                    </li>
+                    <li>
+                      <input type="radio" id="media4" name="media">
+                      <label for="media4"><span></span>내외부 사인(점두사인, 돌출사인 등)</label>
+                    </li>
+                    <li>
+                      <input type="radio" id="media5" name="media">
+                      <label for="media5"><span></span>홍보/판촉물 (현수막, X-배너 등)</label>
+                    </li>
+                    <li>
+                      <input type="radio" id="media6" name="media">
+                      <label for="media6"><span></span>기타 사용</label>
+                    </li>
+                  </ul>
+                  <input type="text" placeholder="기타 사용 내용을 입력하세요." required>
+                </div>
+              </div>
+              <div class="item">
+                <span class="form_label essential"><label for="item">적용아이템</label></span>
+                <div>
+                  <input type="text" id="item" placeholder="구체적인 적용아이템을 입력하세요.">
+                  <span class="ui-list-star ex">예시 : 대봉투, 현수막, X-배너, App, 유니폼, 스탠딩 사인 등</span>
+                </div>
+              </div>
+              <div class="item">
+                <span class="form_label essential">사용지역</span>
+                <div>
+                  <ul class="form_flex">
+                    <li>
+                      <input type="radio" id="area1" name="area" checked>
+                      <label for="area1"><span></span>국내</label>
+                    </li>
+                    <li>
+                      <input type="radio" id="area2" name="area">
+                      <label for="area2"><span></span>해외</label>
+                    </li>
+                  </ul>
+                  <input type="text" placeholder="지역명(국내) 혹은 국가명(해외)을 입력하세요." required>
+                </div>
+              </div>
+              <div class="item">
+                <span class="form_label essential"><label for="qaTxt">문의사항</label></span>
+                <div class="ui-textarea">
+                  <textarea name="name" rows="15" cols="80" id="qaTxt" placeholder="문의사항을 입력하세요."></textarea>
+                </div>
+              </div>
+              <div class="item">
+                <span class="form_label">첨부파일</span>
+                <!-- 파일첨부 태그 -->
+                <div class="ui-file">
+                  <span for="attach" class="btn-file">파일 업로드<input type="file" class="multi MultiFile-applied"></span>
+                  <span class="ui-list-mark">디자인 시안 및 샘플 사진을 첨부해주세요.</span>
+                  <div class="MultiFile-wrap">
+                    <div class="MultiFile-list">
+                      <div class="MultiFile-label">
+                        <a href="#" class="MultiFile-remove">x</a>
+                        <span><span class="MultiFile-label"><span class="MultiFile-title">판촉물 샘플.jpg</span></span></span>
+                      </div>
+                      <div class="MultiFile-label">
+                        <a href="#" class="MultiFile-remove">x</a>
+                        <span><span class="MultiFile-label"><span class="MultiFile-title">판촉물 샘플 모음.pdf</span></span></span>
+                      </div>
+                      <div class="MultiFile-label">
+                        <a href="#" class="MultiFile-remove">x</a>
+                        <span><span class="MultiFile-label"><span class="MultiFile-title">판촉물 샘플 설명.doc</span></span></span>
+                      </div>
+                    </div>
+                    <div class="attachedMore"><label for="#" class="addFile">+</label></div>
+                  </div>
+                </div>
+                <!-- //파일첨부 태그 -->
+              </div>
+            </div>
+            <div class="sub_desc">
+              <p class="ui-list-dot">CI 적용 시 궁금한 사항이나 초안 등을 작성해 주시면, 가이드 위반 여부 등을 파악하여 신속히 안내해드리겠습니다.</p>
+              <p class="ui-list-dot">CI 적용에 대한 다양한 활용사례 등을 통해 유사한 내역을 확인하실 수 있습니다.</p>
+            </div>
+            <div class="btn_wrap">
+              <button type="button" class="btn c2">취소</button>
+              <a href="DBCI090102.html" class="btn c1">저장</a>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+    <!-- //container -->
+    <footer id="inc_footer"></footer>
+  </main>
+</body>
+</html>

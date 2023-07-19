@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MY PAGE</title>
+  <script src="/resource/service/js/lib/jquery-3.2.1.min.js"></script>
+    <script src="/resource/service/js/lib/jquery-ui.js"></script>
+  <script src="/resource/service/js/netive.ui.common.js"></script>
+  <script src="/resource/service/js/ui.common.js"></script>
+  <link rel="stylesheet" href="/resource/service/css/lib/jquery-ui.css">
+  <link rel="stylesheet" href="/resource/service/css/ui.common.css">
+  <link rel="stylesheet" href="/resource/service/css/ui.content.css">
+  <link rel="stylesheet" href="/resource/service/css/ui.mobile.css">
+</head>
+<body>
+  <main class="service_wrap mypage">
+    <!-- header -->
+    <header id="inc_header"></header>
+    <!-- //header -->
+    <!-- container -->
+    <section class="service_container">
+      <div class="page_head none">
+        <div>
+          <h1 class="title en">MY PAGE</h1>
+          <p>문의 및 신고내역과 관련 이력들을 확인해보세요.</p>
+        </div>
+      </div>
+      <article class="service_article">
+        <div class="breadcrumbs">
+          <ul class="breadcrumb">
+            <li><a href="./DBCI010101.html" class="home"><span class="hide">home</span></a></li>
+            <li><a href="./DBCI070101.html"><em class="en">My Page</em></a></li>
+            <li><a href="./DBCI070101.html" class="active"><em class="en">My Page</em></a></li>
+          </ul>
+        </div>
+        <div class="page_cont">
+          <div class="profile_box">
+            <div class="profile_wrap">
+              <div class="profile">
+                <div class="profile_img">
+                  <img src="/resource/service/images/page/affiliate/img-affiliate-10.jpg" alt="DB Inc" onerror="this.style.display='none';" /></div> <!--이미지가 없을 경우 hidden처리 -->
+                <div class="profile_info">
+                  <span class="affiliation">DBInc.</span>
+                  <span class="name"><strong>홍길동</strong> 님</span>
+                  <span class="position"><em>마케팅 1팀 / 과장</em></span>
+                  <div class="profile_edit">
+                    <a href="./DBCI070401.html" class="btn-edit">수정</a>
+                  </div>
+                </div>
+              </div>
+              <div class="stats">
+                <div class="stats_item">
+                  <p>
+                    <em class="num">6</em>
+                    <span>즐겨찾기</span>
+                  </p>
+                </div>
+                <div class="stats_item">
+                  <p>
+                    <em class="num">14</em>
+                    <span>총 다운로드 횟수</span>
+                  </p>
+                </div>
+                <div class="stats_item">
+                  <p class="noti">
+                    <em class="num">2</em>
+                    <span>신청/신고</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="area">
+            <h2><a href="./DBCI070201.html" class="view">나의 문의 내역</a></h2>
+            <div class="ui-panel-wrap">
+              <div class="ui-panel no-data">
+                <div>문의 내역이 존재하지 않습니다.</div>
+              </div>
+              <div class="ui-panel">
+                <div class="ui-question">
+                  <div class="ui-panel-label">상표권사용문의</div>
+                  <a href="#"><p>명함제작 관련해서 문의를 드립니다</p></a>
+                  <span class="date">2020/05/04</span>
+                </div>
+              </div>
+              <div class="ui-panel">
+                <div class="ui-question">
+                  <div class="ui-panel-label">상표권사용문의</div>
+                  <a href="#"><p>명함제작 관련해서 문의를 드립니다</p></a>
+                  <span class="date">2020/05/04</span>
+                </div>
+                <div class="ui-answer">
+                  <a href="#"><p><em>답변</em>안녕하세요, 브랜드 가이드를 담당하고 있는 홍길동입니다.</p></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="area">
+            <h2><a href="./DBCI070301.html" class="view">나의 신고 내역</a></h2>
+            <div class="ui-panel-wrap">
+              <div class="ui-panel no-data">
+                <div>신고 내역이 존재하지 않습니다.</div>
+              </div>
+              <div class="ui-panel">
+                <div class="ui-question">
+                  <a href="#"><p>CI 오남용 상황 신고합니다.</p></a>
+                  <span class="date">2020/05/04</span>
+                </div>
+              </div>
+              <div class="ui-panel">
+                <div class="ui-question">
+                  <a href="#"><p>CI 오남용 상황 신고합니다.</p></a>
+                  <span class="date">2020/05/04</span>
+                </div>
+                <div class="ui-answer">
+                  <a href="#"><p><em>답변</em>안녕하세요, 브랜드 가이드를 담당하고 있는 홍길동입니다.</p></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="area">
+            <h2 class="r_label">나의 즐겨찾기<span class="ui-list-mark">나의 CI 즐겨찾기는 최대 6개 까지 저장 가능합니다.</span></h2>
+            <div class="ui-favorite">
+              <ul>
+                <li>
+                  <button type="button"><span class="hide">닫기</span></button>
+                  <a href="#" class="no-data"> <!--이미지가 없을 경우 'no-data'클래스 부여-->
+                    <div class="img_box">
+                      <img src="/resource/service/images/page/ciGuide/@img-stationery-5.jpg" alt="KPGA 코리안투어 DB손해보험 프로미 오픈X배너 가이드">
+                    </div>
+                  </a>
+                  <p class="ui-favorite-name">대봉투</p>
+                </li>
+                <li>
+                  <button type="button"><span class="hide">닫기</span></button>
+                  <a href="#">
+                    <div class="img_box">
+                      <img src="/resource/service/images/page/ciGuide/@img-stationery-6.jpg" alt="KPGA 코리안투어 DB손해보험 프로미 오픈X배너 가이드">
+                    </div>
+                  </a>
+                  <p class="ui-favorite-name">우편용라벨</p>
+                </li>
+                <li>
+                  <button type="button"><span class="hide">닫기</span></button>
+                  <a href="#">
+                    <div class="img_box">
+                      <img src="/resource/service/images/page/ciGuide/@img-stationery-6.jpg" alt="KPGA 코리안투어 DB손해보험 프로미 오픈X배너 가이드">
+                    </div>
+                  </a>
+                  <p class="ui-favorite-name">명함</p>
+                </li>
+                <li class="blank">
+                  <a href="#"><span class="hide">추가</span></a>
+                </li>
+                <li class="blank">
+                  <a href="#"><span class="hide">추가</span></a>
+                </li>
+                <li class="blank">
+                  <a href="#"><span class="hide">추가</span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="area">
+            <h2>최근 다운로드 이력</h2>
+            <div class="ui-panel-wrap">
+              <div class="ui-panel no-data">
+                <div>다운로드 이력이 존재하지 않습니다.</div>
+              </div>
+              <div class="ui-panel">
+                <div class="ui-panel-list download-list">
+                  <a>Basic Stystem</a>
+                  <a>Signature</a>
+                  <a>Signature of Slogan</a>
+                  <a class="active"><em class="en">AI</em>파일</a>
+                  <span class="date">2020/05/20</span>
+                </div>
+              </div>
+              <div class="ui-panel">
+                <div class="ui-panel-list download-list">
+                  <a>Basic Stystem</a>
+                  <a>Signature</a>
+                  <a>Signature of Slogan</a>
+                  <a class="active"><em class="en">pdf</em>파일</a>
+                  <span class="date">2020/05/20</span>
+                </div>
+              </div>
+              <div class="ui-panel">
+                <div class="ui-panel-list download-list">
+                  <a>Basic Stystem</a>
+                  <a>Signature</a>
+                  <a>Signature of Slogan</a>
+                  <a class="active"><em class="en">JPG</em>파일</a>
+                  <span class="date">2020/05/20</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="area notice">
+            <h2><a href="#" class="view">공지사항</a></h2>
+            <div class="ui-panel-wrap">
+              <div class="ui-panel no-data">
+                <div>
+                  공지사항이 없습니다.
+                </div>
+              </div>
+              <div class="ui-panel">
+                <div class="ui-panel-list">
+                  <a href="#"><p>2020년 10월 10일 서비스 일시점검으로 사용이 중단됩니다.</p></a>
+                  <span class="date">2020/05/20</span>
+                </div>
+              </div>
+              <div class="ui-panel">
+                <div class="ui-panel-list">
+                  <a href="#"><p>2020년 10월 10일 서비스 일시점검으로 사용이 중단됩니다.</p></a>
+                  <span class="date">2020/03/15</span>
+                </div>
+              </div>
+              <div class="ui-panel">
+                <div class="ui-panel-list">
+                  <a href="#"><p>2020년 10월 10일 서비스 일시점검으로 사용이 중단됩니다.</p></a>
+                  <span class="date">2020/05/20</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+    <!-- //container -->
+    <footer id="inc_footer"></footer>
+  </main>
+</body>
+</html>

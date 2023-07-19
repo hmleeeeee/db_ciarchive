@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>나의 문의내역</title>
+  <script src="/resource/service/js/lib/jquery-3.2.1.min.js"></script>
+    <script src="/resource/service/js/lib/jquery-ui.js"></script>
+  <script src="/resource/service/js/netive.ui.common.js"></script>
+  <script src="/resource/service/js/ui.common.js"></script>
+  <link rel="stylesheet" href="/resource/service/css/lib/jquery-ui.css">
+  <link rel="stylesheet" href="/resource/service/css/ui.common.css">
+  <link rel="stylesheet" href="/resource/service/css/ui.content.css">
+  <link rel="stylesheet" href="/resource/service/css/ui.mobile.css">
+</head>
+<body>
+  <main class="service_wrap board">
+    <!-- header -->
+    <header id="inc_header"></header>
+    <!-- //header -->
+    <!-- container -->
+    <section class="service_container">
+      <div class="page_head">
+        <div>
+          <h1 class="title">나의 문의내역</h1>
+          <p>문의하신 내역을 확인해 보실 수 있습니다.</p>
+        </div>
+      </div>
+      <article class="service_article">
+        <div class="breadcrumbs">
+          <ul class="breadcrumb">
+            <li><a href="./DBCI010101.html" class="home"><span class="hide">home</span></a></li>
+            <li><a href="./DBCI070101.html"><em class="en">My Page</em></a></li>
+            <li><a href="./DBCI070202.html" class="active">나의 문의내역</a></li>
+          </ul>
+        </div>
+        <div class="page_cont">
+          <div class="cont_tit"><h2 class="title">나의 문의내역</h2></div>
+          <div class="list_view">
+            <ul class="board_top">
+              <li class="col_grid">
+                <div class="col_2 board_tit"><span>문의 제목</span></div>
+                <div class="col_4">
+                  <p>상표권 사용 문의 드립니다.</p>
+                </div>
+                <div class="col_2 board_tit"><span>구분</span></div>
+                <div class="col_4">
+                  <p>상표권 사용문의</p>
+                </div>
+              </li>
+              <li class="col_grid">
+                <div class="col_2 board_tit"><span>접수일</span></div>
+                <div class="col_4"><span>2020년 8월 20일</span></div>
+                <div class="col_2 board_tit"><span>적용매체</span></div>
+                <div class="col_4"><span>기타 사용(홍보용 물티슈에 사용)</span></div>
+              </li>
+              <li class="col_grid">
+                <div class="col_2 board_tit"><span>적용아이템</span></div>
+                <div class="col_4"><span>물티슈</span></div>
+                <div class="col_2 board_tit"><span>사용지역</span></div>
+                <div class="col_4"><span>국내(대전)</span></div>
+              </li>
+              <li class="col_grid">
+                <div class="col_2 board_tit"><span>문의 첨부파일</span></div>
+                <div class="col_10">
+                  <span class="attachedFile">
+                    <a href="#">판촉물 샘플1.jpg</a>
+                  </span>
+                  <span class="attachedFile">
+                    <a href="#">판촉물 샘플2.jpg</a>
+                  </span>
+                  <span class="attachedFile">
+                    <a href="#">판촉물 샘플3.jpg</a>
+                  </span>
+                </div>
+              </li>
+            </ul>
+            <div class="area">
+              <div class="board_tit pc_hide">문의 내용</div>
+              <div class="board_txt">
+                <p class="desc">
+                새로 판촉물을 주문하기 위해 상표권을 사용하고 싶어요.<br class="br">
+                저희 지점에서 상표권을 사용하기 위해서 어떤 자료나 요청 서류 필요한가요?<br class="br"><br class="br">
+                빨리 답변해주시면 감사하겠습니다.
+                <br>
+                </p>
+              </div>
+              <div class="board_answer">
+                <dl>
+                  <div>
+                    <dt>답변제목</dt>
+                    <dd>사용문의에 대하여 답변드립니다.</dd>
+                  </div>
+                </dl>
+                <dl>
+                  <div>
+                    <dt>작성일</dt>
+                    <dd>2020년 8월 20일</dd>
+                  </div>
+                </dl>
+                <dl>
+                  <div class="board_attached">
+                    <dt>첨부파일</dt>
+                    <dd>
+                      <span class="attachedFile">
+                        <a href="#">판촉물 샘플1.jpg</a>
+                      </span>
+                      <span class="attachedFile">
+                        <a href="#">판촉물 샘플2.jpg</a>
+                      </span>
+                      <span class="attachedFile">
+                        <a href="#">판촉물 샘플3.jpg</a>
+                      </span>
+                    </dd>
+                  </div>
+                </dl>
+                <dl>
+                  <div class="board_answer_box">
+                    <dt>내용</dt>
+                    <dd class="board_answer_txt">
+                      <p class="desc">
+                        안녕하세요. 홍길동 과장님.<br class="br">
+                        문의주신 사항은 첨부된 파일을 참조하시어 서류를 준비해 주시기 바랍니다.<br class="br">
+                        감사합니다.
+                      </p>
+                    </dd>
+                  </div>
+                </dl>
+              </div>
+              <!-- 답변이 없을 경우 'no-data' class 부여-->
+              <div class="board_answer no-data">
+                <dl>
+                  <div>해당 문의내용은 확인중 입니다.</div>
+                </dl>
+              </div>
+              <!-- //답변이 없을 경우 'no-data' class 부여-->
+            </div>
+            <div class="board_pagenation">
+              <div class="col_grid">
+                <div class="col_2">
+                  <a href="#">
+                    <span class="board_arr prev">이전글</span>
+                  </a>
+                </div>
+                <div class="col_8">
+                  <p>2020년 10월 05일 서비스 일시점검으로 사용이 중단됩니다.</p>
+                </div>
+                <div class="col_2">
+                  <span class="board_date">2020/08/20</span>
+                </div>
+              </div>
+              <div class="col_grid">
+                <div class="col_2">
+                  <a href="#">
+                    <span class="board_arr next">다음글</span>
+                  </a>
+                </div>
+                <div class="col_8">
+                  <p>2020년 10월 05일 서비스 일시점검으로 사용이 중단됩니다.</p>
+                </div>
+                <div class="col_2">
+                  <span class="board_date">2020/08/20</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="btn-center"><a href="./DBCI070201.html" class="btn c2">목록</a></div>
+        </div>
+      </article>
+    </section>
+    <!-- //container -->
+    <footer id="inc_footer"></footer>
+  </main>
+</body>
+</html>

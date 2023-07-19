@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>회원정보수정</title>
+  <script src="/resource/service/js/lib/jquery-3.2.1.min.js"></script>
+    <script src="/resource/service/js/lib/jquery-ui.js"></script>
+  <script src="/resource/service/js/netive.ui.common.js"></script>
+  <script src="/resource/service/js/ui.common.js"></script>
+  <link rel="stylesheet" href="/resource/service/css/lib/jquery-ui.css">
+  <link rel="stylesheet" href="/resource/service/css/ui.common.css">
+  <link rel="stylesheet" href="/resource/service/css/ui.content.css">
+  <link rel="stylesheet" href="/resource/service/css/ui.mobile.css">
+</head>
+<body>
+  <main class="service_wrap mypage_edit">
+    <!-- header -->
+    <header id="inc_header"></header>
+    <!-- //header -->
+    <!-- container -->
+    <section class="service_container">
+      <div class="page_head">
+        <div>
+          <h1>회원정보수정</h1>
+          <p>회원가입 시 등록된 정보를 수정합니다.</p>
+        </div>
+      </div>
+      <article class="service_article">
+        <div class="breadcrumbs">
+          <ul class="breadcrumb">
+            <li><a href="./index.html" class="home"><span class="hide">home</span></a></li>
+            <li><a href="./DBCI070101.html"><em class="en">My Page</em></a></li>
+            <li><a href="./DBCI070401.html" class="active">회원정보수정</a></li>
+          </ul>
+        </div>
+        <div class="page_cont">
+          <div class="cont_tit"><h2 class="title">회원정보수정</h2></div>
+          <p class="caption ui-list-star">필수 입력 항목</p>
+          <div class="form_inline">
+            <div class="form_item">
+              <div class="flex_item">
+                <label for="emailId" class="form_label">이메일(아이디)</label>
+                <div class="input_box"><input type="email" id="emailId" value="abc123@dbgroup.co.kr"></div>
+                <a href="./DBCI070403.html" class="btn c4">비밀번호 변경</a>
+              </div>
+              <div class="flex_item">
+                <label for="name" class="form_label">성명</label>
+                <div class="input_box"><input type="text" id="name" value="홍길동"></div>
+              </div>
+              <div class="flex_item">
+                <label for="group" class="form_label">소속사</label>
+                <div class="input_box"><input type="text" id="group" value="DB생명"></div>
+              </div>
+              <div class="flex_item">
+                <label for="teamName" class="form_label essential">부서명</label>
+                <div class="input_box"><input type="text" id="teamName" value="마케팅 1팀"></div>
+              </div>
+              <div class="area">
+                <label for="phone" class="form_label essential">휴대폰 번호</label>
+                <div class="col_grid phone">
+                  <div class="ui-selectbox">
+                    <select name="phoneNum" title="그룹사 선택">
+                      <option value="010" selected="">010</option>
+                      <option value="011">011</option>
+                      <option value="016">016</option>
+                      <option value="017">017</option>
+                      <option value="018">018</option>
+                      <option value="019">019</option>
+                    </select>
+                  </div>
+                  <div class="input_box"><input type="text" value="1234"></div>
+                  <div class="input_box"><input type="text" value="5678"></div>
+                </div>
+              </div>
+            </div>
+            <div class="break">
+              <p>DB CI Archive 를 더 이상 이용하지 않는다면 <a href="./DBCI070405.html" class="more"> 회원탈퇴 바로가기 ></a></p>
+            </div>
+            <div class="btn-center">
+              <a href="DBCI070402.html" class="btn c1">저장</a>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+    <!-- //container -->
+    <footer id="inc_footer"></footer>
+  </main>
+</body>
+</html>

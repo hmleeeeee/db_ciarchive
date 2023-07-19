@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>나의 신고내역</title>
+  <script src="/resource/service/js/lib/jquery-3.2.1.min.js"></script>
+    <script src="/resource/service/js/lib/jquery-ui.js"></script>
+  <script src="/resource/service/js/netive.ui.common.js"></script>
+  <script src="/resource/service/js/ui.common.js"></script>
+  <link rel="stylesheet" href="/resource/service/css/lib/jquery-ui.css">
+  <link rel="stylesheet" href="/resource/service/css/ui.common.css">
+  <link rel="stylesheet" href="/resource/service/css/ui.content.css">
+  <link rel="stylesheet" href="/resource/service/css/ui.mobile.css">
+</head>
+<body>
+  <main class="service_wrap board">
+    <!-- header -->
+    <header id="inc_header"></header>
+    <!-- //header -->
+    <!-- container -->
+    <section class="service_container">
+      <div class="page_head">
+        <div>
+          <h1 class="title">나의 신고내역</h1>
+          <p>신고하신 내역을 확인해 보실 수 있습니다.</p>
+        </div>
+      </div>
+      <article class="service_article">
+        <div class="breadcrumbs">
+          <ul class="breadcrumb">
+            <li><a href="./DBCI010101.html" class="home"><span class="hide">home</span></a></li>
+            <li><a href="./DBCI070101.html"><em class="en">My page</em></a></li>
+            <li><a href="./DBCI070302.html" class="active">나의 신고내역</a></li>
+          </ul>
+        </div>
+        <div class="page_cont">
+          <div class="cont_tit"><h2 class="title">나의 신고내역</h2></div>
+          <div class="list_view">
+            <ul class="board_top">
+              <li class="col_grid">
+                <div class="col_2 board_tit"><span>제목</span></div>
+                <div class="col_10">
+                  <p>처음보는 사이트에서 DB로고를 쓰고있어요.</p>
+                </div>
+              </li>
+              <li class="col_grid">
+                <div class="col_2 board_tit"><span>접수일</span></div>
+                <div class="col_4">
+                  <p>2020년 10월 20일</p>
+                </div>
+                <div class="col_2 board_tit"><span>침해유형</span></div>
+                <div class="col_4"><span>'DB'상표가 사용된 불법 어플리케이션 신고</span></div>
+              </li>
+              <li class="col_grid">
+                <div class="col_2 board_tit"><span>침해사실 발견시점</span></div>
+                <div class="col_4"><span>2020년 9월 20일</span></div>
+                <div class="col_2 board_tit"><span>침해사실 발견장소</span></div>
+                <div class="col_4"><span>https://www.dbinc.com</span></div>
+              </li>
+              <li class="col_grid">
+                <div class="col_2 board_tit"><span>문의 첨부파일</span></div>
+                <div class="col_10">
+                  <span class="attachedFile">
+                    <a href="#">스크린샷1.jpg</a>
+                  </span>
+                  <span class="attachedFile">
+                    <a href="#">스크린샷2.jpg</a>
+                  </span>
+                  <span class="attachedFile">
+                    <a href="#">스크린샷3.jpg</a>
+                  </span>
+                </div>
+              </li>
+            </ul>
+            <div class="area">
+              <div class="board_tit pc_hide">문의 내용</div>
+              <div class="board_txt">
+                <p class="desc">
+                웹서핑하다가 보험관련 블로그에서 DB로고를 임으로 사용하는걸 발견했습니다.<br class="br">
+                확인하시고 조치해주세요
+                <br>
+                </p>
+              </div>
+              <div class="board_answer">
+                <dl>
+                  <div>
+                    <dt>답변제목</dt>
+                    <dd>침해 신고 감사합니다.</dd>
+                  </div>
+                </dl>
+                <dl>
+                  <div>
+                    <dt>작성일</dt>
+                    <dd>2020년 8월 20일</dd>
+                  </div>
+                </dl>
+                <dl>
+                  <div class="board_attached">
+                    <dt>첨부파일</dt>
+                    <dd>
+                      <span class="attachedFile">
+                        <a href="#">스크린샷1.jpg</a>
+                      </span>
+                      <span class="attachedFile">
+                        <a href="#">스크린샷2.jpg</a>
+                      </span>
+                      <span class="attachedFile">
+                        <a href="#">스크린샷3.jpg</a>
+                      </span>
+                    </dd>
+                  </div>
+                </dl>
+                <dl>
+                  <div class="board_answer_box">
+                    <dt>내용</dt>
+                    <dd class="board_answer_txt">
+                      <p class="desc">
+                        안녕하세요. 홍길동 과장님.<br>
+                        문의주신 자료를 토대로 해당 침해 건에 대하여 조사가 진행될 예정입니다.<br>
+                        신고 감사하며 첨부된 파일의 예시를 주변에 전달하여 많은 분들이 알게되면 좋을것 같습니다. 감사합니다.
+                      </p>
+                    </dd>
+                  </div>
+                </dl>
+              </div>
+            </div>
+            <div class="board_pagenation">
+              <div class="col_grid">
+                <div class="col_2">
+                  <a href="#">
+                    <span class="board_arr prev">이전글</span>
+                  </a>
+                </div>
+                <div class="col_8">
+                  <p>2020년 10월 05일 서비스 일시점검으로 사용이 중단됩니다.</p>
+                </div>
+                <div class="col_2">
+                  <span class="board_date">2020/08/20</span>
+                </div>
+              </div>
+              <div class="col_grid">
+                <div class="col_2">
+                  <a href="#">
+                    <span class="board_arr next">다음글</span>
+                  </a>
+                </div>
+                <div class="col_8">
+                  <p>2020년 10월 05일 서비스 일시점검으로 사용이 중단됩니다.</p>
+                </div>
+                <div class="col_2">
+                  <span class="board_date">2020/08/20</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="btn-center"><a href="./DBCI070301.html" class="btn c2">목록</a></div>
+        </div>
+      </article>
+    </section>
+    <!-- //container -->
+    <footer id="inc_footer"></footer>
+  </main>
+</body>
+</html>

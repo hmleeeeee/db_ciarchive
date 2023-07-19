@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <title>문의 관리</title>
+    <script src="/resource/admin/js/lib/jquery-3.2.1.min.js"></script>
+    <script src="/resource/admin/js/netive.ui.common.js"></script><!-- namespace, device check -->
+    <script src="/resource/admin/js/ui.common.js"></script><!-- UI script -->
+    <link rel="stylesheet" href="/resource/admin/css/ui.common.css">
+</head>
+<body>
+
+<div class="admin_wrap">
+
+    <!-- navigation -->
+    <div id="inc_navi"></div>
+
+    <!-- content -->
+    <div class="admin_content">
+        <h1 class="h1">CI 적용 문의</h1>
+        <h2 class="h2">작성자정보</h2>
+
+        <div class="ui-table-view">
+            <table>
+                <colgroup>
+                    <col style="width: 170px">
+                    <col>
+                    <col style="width: 170px">
+                    <col>
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th scope="row">작성자아이디(이메일)</th>
+                        <td>abc123@dbgroup.co.kr</td>
+                        <th scope="row">구분</th>
+                        <td>계열사</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">이름</th>
+                        <td>홍길동</td>
+                        <th scope="row">소속사명</th>
+                        <td>DB생명</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">직급</th>
+                        <td>과장</td>
+                        <th scope="row">부서명</th>
+                        <td>마케팅1팀</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <hr>
+
+        <h2 class="h2">문의내용</h2>
+
+        <div class="ui-table-view">
+            <table>
+                <colgroup>
+                    <col style="width: 170px">
+                    <col>
+                    <col style="width: 170px">
+                    <col>
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th scope="row">글제목</th>
+                        <td>상표권 사용 문의 드립니다.</td>
+                        <th scope="row">작성일</th>
+                        <td>2020/08/24 13:47:03</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">적용매체</th>
+                        <td>기타 사용 (홍보용 물티슈에 사용)</td>
+                        <th scope="row">적용아이템</th>
+                        <td>물티슈</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">사용지역</th>
+                        <td colspan="3">국내 (대전)</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">첨부파일</th>
+                        <td colspan="3">
+                            <span class="attachedFile">
+                                <a href="#">031_보험계약대출신청_약정동의.jpg</a>
+                                <button type="button"><span>삭제</span></button>
+                            </span>
+                            <span class="attachedFile">
+                                <a href="#">031_보험계약대출신청_약정동의.jpg</a>
+                                <button type="button"><span>삭제</span></button>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">문의내용</th>
+                        <td colspan="3">
+                            <div class="textData">
+                                새로 판촉물을 주문하기 위해 상표권을 사용하고 싶어요.<br>
+                                사용하기 위해서 어떤 자료나 요청 서류가 필요한가요?
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <hr>
+
+        <h2 class="h2">답변작성</h2>
+
+        <div class="ui-table-view">
+            <table>
+                <colgroup>
+                    <col style="width: 170px">
+                    <col>
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th scope="row">글제목</th>
+                        <td><input type="text"></td>
+                        <th scope="row">답변일</th>
+                        <td>2020/08/24 13:49:55</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">첨부파일</th>
+                        <td colspan="3"><input type="file"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">문의내용</th>
+                        <td colspan="3"> <textarea></textarea></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="ui-btn-wrap">
+            <div>
+                <a href="./DBAD050301.html" class="btn btn-default"><span>목록</span></a>
+                <button type="button" class="btn btn-primary"><span>저장</span></button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script>
+    // 메뉴 활성화
+    $plugins.mymenu.init(4,1);
+</script>
+
+</body>
+</html>

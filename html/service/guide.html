@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>_Guide list</title>
+
+  <script src="/resource/service/js/lib/jquery-3.2.1.min.js"></script>
+  <script src="/resource/service/js/lib/jquery-ui.js"></script>
+  <script src="/resource/service/js/lib/swiper.min.js"></script>
+  <script src="/resource/service/js/netive.ui.common.js"></script>
+  <script src="/resource/service/js/ui.common.js"></script>
+  <link rel="stylesheet" href="/resource/service/css/lib/jquery-ui.css">
+  <link rel="stylesheet" href="/resource/service/css/ui.common.css">
+  <link rel="stylesheet" href="/resource/service/css/ui.content.css">
+  <link rel="stylesheet" href="/resource/service/css/ui.mobile.css">
+  <link rel="stylesheet" href="/resource/service/css/lib/swiper.min.css">
+  <style>
+    [class$=_form] {
+      width: 1200px !important;
+    }
+
+    [class$=_form] .form_head {
+      text-align: left !important;
+    }
+
+    .guide_list {
+      width: 1200px;
+      padding: 50px 0;
+      margin: 0 auto;
+    }
+
+    .guide_box {
+      padding: 30px 0;
+    }
+
+    .ui-slidewrap {
+      width: 1200px;
+      margin: 50px auto;
+    }
+
+    .h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    .service_wrap .cont_tit {
+      margin: 0;
+    }
+
+    .service_wrap .service_container .service_article .sub_desc {
+      padding: 0;
+    }
+
+    .phone {
+      width: 440px;
+    }
+
+    .ui-selectbox {
+      width: 440px;
+      margin-bottom: 10px;
+    }
+
+    .guide_tit h2 {
+      font-family: 'Roboto';
+      font-size: 60px;
+      font-weight: 900;
+      color: #00854a;
+      line-height: 1;
+      margin-bottom: 40px;
+    }
+  </style>
+</head>
+<body>
+  <main class="service_wrap">
+    <header id="inc_header"></header>
+    <section class="service_container">
+      <div class="page_head">
+        <div>
+          <h1><em class="en">GUIDE LIST</em></h1>
+          <p>기본 레이아웃 구성과 사용된 컨텐츠 스타일 가이드 문서입니다.</p>
+        </div>
+      </div>
+      <article class="service_article">
+        <div class="breadcrumbs">
+          <ul class="breadcrumb">
+            <li><a href="./DBCI010101.html" class="home"><span class="hide">home</span></a></li>
+            <li><a href="./guide.html">GUIDE</a></li>
+          </ul>
+        </div>
+        <!-- guide start -->
+        <div class="guide_list">
+          <div class="guide_box">
+            <h2 class="h2">button type</h2>
+            <div>
+              <button class="btn c1">.c1</button>
+              <button class="btn c2">.c2</button>
+              <button class="btn c3">.c3</button>
+              <button class="btn c4">.c4</button>
+              <button class="btn c5">.c5</button>
+            </div>
+          </div>
+          <div class="guide_box guide_form">
+            <div class="form_head">
+              <h2><em class="en">DB</em> 로그인/회원가입 폼 타이틀</h2>
+              <p class="desc">공통페이지 폼 서브타이틀공통페이지 폼 서브타이틀<br class="m_block">공통페이지 폼 서브타이틀공통페이지 폼 서브타이틀공통페이지 폼 서브타이틀</p>
+            </div>
+            <div class="guide_tit">
+              <h2>CI가이드 페이지 타이틀</h2>
+              <p><em class="en">CI</em>가이드 페이지 서브타이틀가이드 페이지 서브타이틀가이드 페이지 서브타이틀<br class="m_block">가이드 서브 타이틀가이드 서브 타이틀가이드 서브 타이틀</p>
+            </div>
+
+            <div class="sub_desc">
+              <h2 class="h2">list type</h2>
+              <p class="ui-list-star">상표권 사용에 대한 다양한 활용사례 등을 통해 유사한 내역을 확인하실 수 있습니다.</p>
+              <p class="ui-list-dot">상표권 사용 시 궁금한 사항이나 초안 등을 작성해주시면, 가이드 위반 여부 등을 파악하여 신속히 안내해드리겠습니다.</p>
+              <p class="ui-list-mark">상표권 사용에 대한 다양한 활용사례 등을 통해 유사한 내역을 확인하실 수 있습니다.</p>
+            </div>
+          </div>
+          <div class="guide_box">
+            <h2 class="h2">form type</h2>
+            <p class="caption ui-list-star">캡션 필수 입력 항목</p>
+            <div class="form_inline">
+              <div class="form_item">
+                <div class="item">
+                  <span class="form_label essential"><label for="formlabel">form_label</label></span>
+                  <div>
+                    <input type="text" id="formlabel" placeholder="input type text">
+                    <p class="ui-list-star c_main">‘DB’, ‘디비’, ‘Dream Big’ 등 사용을 희망하는 상표를 기재</p>
+                  </div>
+                </div>
+                <div class="item">
+                  <span class="form_label essential"><label for="formDatepicker1">datepicker</label></span>
+                  <div class="datepicker_wrap">
+                    <span><input type="text" id="formDatepicker1" class="datepicker" value="2020-07-28"></span>
+                    <span><input type="text" id="formDatepicker2" class="datepicker" value="2020-07-28"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="guide_box">
+            <h2 class="h2">input type</h2>
+            <ul class="form_flex">
+              <li class="ui-chkbox">
+                <input type="checkbox" id="chk1" name="chk" class="ui-chk">
+                <label for="chk1"><span></span>체크박스 (default)</label>
+              </li>
+              <li class="ui-chkbox">
+                <input type="checkbox" id="chk2" name="chk" class="ui-chk" checked>
+                <label for="chk2"><span></span>체크박스 (checked)</label>
+              </li>
+              <li class="ui-chkbox">
+                <input type="checkbox" id="chk3" name="chk" class="ui-chk" disabled>
+                <label for="chk3">체크박스 (disabled)</label>
+              </li>
+          </ul>
+            <ul class="form_flex">
+              <li>
+                <input type="radio" id="reason1" name="reason" checked>
+                <label for="reason1">라디오 </label>
+              </li>
+              <li>
+                <input type="radio" id="reason2" name="reason">
+                <label for="reason2">라디오</label>
+              </li>
+              <li>
+                <input type="radio" id="reason3" name="reason">
+                <label for="reason3">라디오</label>
+              </li>
+              <li>
+                <input type="radio" id="reason4" name="reason" disabled>
+                <label for="reason4">라디오 (disabled)</label>
+              </li>
+            </ul>
+            <div class="ui-selectbox" style="margin: 20px 0">
+              <select name="select1" title="selectbox">
+                <option value="option1" selected="">selectbox</option>
+                <option value="option2">DB그룹</option>
+                <option value="option3">DB생명</option>
+                <option value="option4">DB손해보험</option>
+                <option value="option5">DB금융투자</option>
+                <option value="option5">DB자산운용</option>
+                <option value="option5">DB저축은행</option>
+                <option value="option5">DB캐피탈</option>
+                <option value="option5">DB하이텍</option>
+                <option value="option5">DB메탈</option>
+                <option value="option5">DB Inc</option>
+                <option value="option5">DB FIS</option>
+                <option value="option5">DB 월드</option>
+              </select>
+            </div>
+            <div class="area col_grid phone">
+              <div class="ui-selectbox">
+                <select name="select2" title="3 box type">
+                  <option value="010" selected>010</option>
+                  <option value="011">011</option>
+                  <option value="016">016</option>
+                  <option value="017">017</option>
+                  <option value="018">018</option>
+                  <option value="019v">019</option>
+                </select>
+              </div>
+              <div class="input_box">
+                <input type="text">
+              </div>
+              <div class="input_box">
+                <input type="text">
+              </div>
+            </div>
+            <div class="input_box">
+              <input type="text" placeholder="input text">
+            </div>
+            <div class="input_box">
+              <input type="password" placeholder="input password">
+            </div>
+            <div class="ui-textarea">
+              <textarea name="name" rows="8" cols="80" placeholder="textarea"></textarea>
+            </div>
+          </div>
+          <div class="guide_box">
+            <h2 class="h2">swiper slide</h2>
+            <div class="ui-slidewrap">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="#" class="card">
+                      <div class="top">
+                        <p><span>title 1</span></p>
+                      </div>
+                      <div class="card_img">
+                        <img src="/resource/service/images/page/ciGuide/@img-stationery-1.jpg" alt="서식류 디자인 가이드라인">
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#" class="card">
+                      <div class="top">
+                        <p><span>title 2</span></p>
+                      </div>
+                      <div class="card_img">
+                        <img src="/resource/service/images/page/ciGuide/@img-stationery-2.jpg" alt="명함">
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#" class="card">
+                      <div class="top">
+                        <p><span>title 3</span></p>
+                      </div>
+                      <div class="card_img">
+                        <img src="/resource/service/images/page/ciGuide/@img-stationery-3.jpg" alt="소봉투">
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#" class="card">
+                      <div class="top">
+                        <p><span>title 4</span></p>
+                      </div>
+                      <div class="card_img">
+                        <img src="/resource/service/images/page/ciGuide/@img-stationery-4.jpg" alt="중봉투">
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#" class="card">
+                      <div class="top">
+                        <p><span>title 5</span></p>
+                      </div>
+                      <div class="card_img">
+                        <img src="/resource/service/images/page/ciGuide/@img-stationery-1.jpg" alt="">
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#" class="card">
+                      <div class="top">
+                        <p><span>title 6</span></p>
+                      </div>
+                      <div class="card_img">
+                        <img src="/resource/service/images/page/ciGuide/@img-stationery-1.jpg" alt="">
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- Add Arrows -->
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <!-- Add Pagination -->
+            </div>
+          </div>
+        </div>
+        <!-- guide end -->
+      </article>
+    </section>
+    <footer id="inc_footer"></footer>
+  </main>
+
+  <script>
+    // ui slide
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 4,
+      spaceBetween: 20,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      }
+    });
+
+    //ui-datepicker
+    $(".datepicker").datepicker({
+      showOn: "button",
+      buttonImage: "/resource/service/images/common/ico-calendar.png",
+      buttonImageOnly: true,
+      buttonText: "Select date",
+      dateFormat: 'yy-mm-dd'
+    });
+  </script>
+</body>
+
+</html>

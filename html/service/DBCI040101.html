@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>상표 사용 관련 문의</title>
+  <script src="/resource/service/js/lib/jquery-3.2.1.min.js"></script>
+  <script src="/resource/service/js/netive.ui.common.js"></script>
+  <script src="/resource/service/js/ui.common.js"></script>
+  <link rel="stylesheet" href="/resource/service/css/ui.common.css">
+  <link rel="stylesheet" href="/resource/service/css/ui.content.css">
+  <link rel="stylesheet" href="/resource/service/css/ui.mobile.css">
+</head>
+<body>
+  <main class="service_wrap">
+    <!-- header -->
+    <header id="inc_header"></header>
+    <!-- //header -->
+    <!-- container -->
+    <section class="service_container">
+      <div class="page_head">
+        <div>
+          <h1>상표 사용 관련 문의</h1>
+          <p>상표권 사용 시 궁금한 사항을 문의해보세요.</p>
+        </div>
+      </div>
+      <article class="service_article">
+        <div class="breadcrumbs">
+          <ul class="breadcrumb">
+            <li><a href="./index.html" class="home"><span class="hide">home</span></a></li>
+            <li><a href="./DBCI040101.html">상표권 문의</a></li>
+            <li><a href="./DBCI040101.html" class="active">상표 사용 관련 문의</a></li>
+          </ul>
+        </div>
+        <div class="page_cont">
+          <div class="cont_tit">
+            <h2>상표 사용 관련 문의</h2>
+          </div>
+          <p class="caption ui-list-star">필수 입력 항목</p>
+          <div class="form_inline">
+            <div class="form_item">
+              <div class="item">
+                <span class="form_label essential"><label for="title">제목</label></span>
+                <div>
+                  <input type="text" id="title" placeholder="제목을 입력하세요.">
+                </div>
+              </div>
+              <div class="item">
+                <span><label for="mark" class="form_label essential">사용 희망 상표</label></span>
+                <div>
+                  <input type="text" id="mark" placeholder="사용을 희망하는 상표를 입력하세요.">
+                  <p class="ui-list-star ex">‘DB’, ‘디비’, ‘Dream Big’ 등 사용을 희망하는 상표를 기재</p>
+                </div>
+              </div>
+              <div class="item">
+                <span class="form_label essential">사용처</span>
+                <div>
+                  <ul class="form_flex">
+                    <li>
+                      <input type="radio" id="reason1" name="reason" checked>
+                      <label for="reason1"><span></span>상호로 사용</label>
+                    </li>
+                    <li>
+                      <input type="radio" id="reason2" name="reason">
+                      <label for="reason2"><span></span>제품명에 사용</label>
+                    </li>
+                    <li>
+                      <input type="radio" id="reason3" name="reason">
+                      <label for="reason3"><span></span>서비스명에 사용</label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="item">
+                <span class="form_label essential"><label for="detailTxt">세부내용</label></span>
+                <div>
+                  <input type="text" id="detailTxt" placeholder="사용처 관련 세부 내용을 입력하세요.">
+                  <p class="ui-list-star ex">상호로 사용하는 경우는 업종을 포함한 세부 내역 기재</p>
+                  <p class="ui-list-star ex">제품명 또는 서비스명으로 사용하는 경우는 생산, 판매 관련 세부 내역 기재</p>
+                </div>
+              </div>
+              <div class="item">
+                <span class="form_label essential">사용기간</span>
+                <div class="datepicker_wrap">
+                  <span><input type="text" class="datepicker" value="2020-09-15" disabled></span>
+                  <span><input type="text" class="datepicker" value="2020-09-15" disabled></span>
+                </div>
+              </div>
+              <div class="item">
+                <span class="form_label essential">사용지역</span>
+                <div>
+                  <ul class="form_flex">
+                    <li>
+                      <input type="radio" id="area1" name="area" checked>
+                      <label for="area1"><span></span>국내</label>
+                    </li>
+                    <li>
+                      <input type="radio" id="area2" name="area">
+                      <label for="area2"><span></span>해외</label>
+                    </li>
+                  </ul>
+                  <input type="text" placeholder="지역명(국내) 혹은 국가명(해외)을 입력하세요." required>
+                </div>
+              </div>
+              <div class="item">
+                <span class="form_label essential">사용매체</span>
+                <div class="multi_ul">
+                  <ul class="form_flex">
+                    <li>
+                      <input type="radio" id="media1" name="media" checked>
+                      <label for="media1"><span></span>인쇄 광고(신문, 잡지 등)에 사용</label>
+                    </li>
+                    <li>
+                      <input type="radio" id="media2" name="media">
+                      <label for="media2"><span></span>방송 광고(TV, 라디오 등)에 사용</label>
+                    </li>
+                    <li>
+                      <input type="radio" id="media3" name="media">
+                      <label for="media3"><span></span>온라인 광고(홈페이지, App, SNS 등)에 사용</label>
+                    </li>
+                    <li>
+                      <input type="radio" id="media4" name="media">
+                      <label for="media4"><span></span>외부 광고판(간판, 플래카드 등)에 사용</label>
+                    </li>
+                    <li>
+                      <input type="radio" id="media5" name="media">
+                      <label for="media5"><span></span>홍보/판촉 등에 사용</label>
+                    </li>
+                    <li>
+                      <input type="radio" id="media6" name="media">
+                      <label for="media6"><span></span>기타 사용</label>
+                    </li>
+                  </ul>
+                  <input type="text" placeholder="기타 사용 내용을 입력하세요." required>
+                </div>
+              </div>
+              <div class="item">
+                <span class="form_label essential"><label for="request">기타 요청사항</label></span>
+                <div class="ui-textarea">
+                  <textarea name="request" id="request" rows="8" cols="120" placeholder="요청사항을 입력하세요."></textarea>
+                </div>
+              </div>
+              <div class="item">
+                <span class="form_label">첨부파일</span>
+                <!-- 파일첨부 태그 -->
+                <div class="ui-file">
+                  <span for="attach" class="btn-file">파일 업로드<input type="file" class="multi MultiFile-applied"></span>
+                  <span class="ui-list-mark">디자인 시안 및 샘플 사진을 첨부해주세요.</span>
+                  <div class="MultiFile-wrap">
+                    <div class="MultiFile-list">
+                      <div class="MultiFile-label">
+                        <a href="#" class="MultiFile-remove">x</a>
+                        <span><span class="MultiFile-label"><span class="MultiFile-title">판촉물 샘플.jpg</span></span></span>
+                      </div>
+                      <div class="MultiFile-label">
+                        <a href="#" class="MultiFile-remove">x</a>
+                        <span><span class="MultiFile-label"><span class="MultiFile-title">판촉물 샘플 모음.pdf</span></span></span>
+                      </div>
+                      <div class="MultiFile-label">
+                        <a href="#" class="MultiFile-remove">x</a>
+                        <span><span class="MultiFile-label"><span class="MultiFile-title">판촉물 샘플 설명.doc</span></span></span>
+                      </div>
+                    </div>
+                    <div class="attachedMore"><label for="#" class="addFile">+</label></div>
+                  </div>
+                </div>
+                <!-- //파일첨부 태그 -->
+              </div>
+            </div>
+            <div class="sub_desc">
+              <p class="ui-list-dot">상표권 사용 시 궁금한 사항이나 초안 등을 작성해주시면, 가이드 위반 여부 등을 파악하여 신속히 안내해드리겠습니다.</p>
+              <p class="ui-list-dot">상표권 사용에 대한 다양한 활용사례 등을 통해 유사한 내역을 확인하실 수 있습니다.</p>
+            </div>
+            <div class="btn_wrap">
+              <button type="button" class="btn c2">취소</button>
+              <a href="DBCI040102.html" class="btn c1">저장</a>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+    <!-- //container -->
+    <footer id="inc_footer"></footer>
+  </main>
+
+  <script src="/resource/service/js/lib/jquery-ui.js"></script>
+  <link rel="stylesheet" href="/resource/service/css/lib/jquery-ui.css">
+  <script>
+    $( ".datepicker" ).datepicker({
+      showOn: "button",
+      buttonImage: "/resource/service/images/common/ico-calendar.png",
+      buttonImageOnly: true,
+      dateFormat: 'yy-mm-dd'
+    });
+  </script>
+</body>
+</html>

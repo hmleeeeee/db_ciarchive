@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <title>회원계정 관리</title>
+    <script src="/resource/admin/js/lib/jquery-3.2.1.min.js"></script>
+    <script src="/resource/admin/js/netive.ui.common.js"></script><!-- namespace, device check -->
+    <script src="/resource/admin/js/ui.common.js"></script><!-- UI script -->
+    <link rel="stylesheet" href="/resource/admin/css/ui.common.css">
+</head>
+<body>
+
+<div class="admin_wrap">
+
+    <!-- navigation -->
+    <div id="inc_navi"></div>
+
+    <!-- content -->
+    <div class="admin_content">
+        <h1 class="h1">회원계정 관리</h1>
+        
+        <div class="ui-search">
+            <select>
+                <option value="">그룹사 선택</option>
+                <option value="">DB그룹</option>
+                <option value="">DB생명</option>
+                <option value="">DB손해보험</option>
+                <option value="">DB금융투자</option>
+                <option value="">DB자산운용</option>
+                <option value="">DB저축은행</option>
+                <option value="">DB캐피탈</option>
+                <option value="">DB하이텍</option>
+                <option value="">DB메탈</option>
+                <option value="">DB Inc</option>
+                <option value="">DB FIS</option>
+                <option value="">DB 월드</option>
+            </select>
+            <select>
+                <option value="">전체</option>
+                <option value="">아이디(이메일)</option>
+                <option value="">이름</option>
+            </select>
+            <input type="text" placeholder="검색어 입력">
+
+            <div class="ui-btn-wrap">
+                <div>
+                    <button type="button" class="btn btn-primary"><span>조회</span></button>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="ui-btn-wrap">
+            <div>
+                <button type="button" class="btn btn-default"><span>선택삭제</span></button>
+            </div>
+            <div></div>
+        </div>
+
+        <div class="ui-table-list">
+            <table>
+                <colgroup>
+                    <col style="width: 50px">
+                    <col>
+                    <col style="width: 14%">
+                    <col style="width: 14%">
+                    <col style="width: 10%">
+                    <col style="width: 13%">
+                    <col style="width: 10%">
+                    <col>
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th scope="col"><input type="checkbox"></th>
+                        <th scope="col">아이디(이메일)</th>
+                        <th scope="col">소속사명</th>
+                        <th scope="col">부서명</th>
+                        <th scope="col">이름</th>
+                        <th scope="col">휴대폰번호</th>
+                        <th scope="col">사용여부</th>
+                        <th scope="col">추천인아이디(이메일)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="text_center"><input type="checkbox"></td>
+                        <td><a href="./DBAD030102.html">abc123@dbgroup.co.kr</a></td>
+                        <td class="text_center">DB손해보험</td>
+                        <td class="text_center">경영지원본부</td>
+                        <td class="text_center">최홍만</td>
+                        <td class="text_center">010-1234·5678</td>
+                        <td class="text_center">Y</td>
+                        <td>1234dbab@dbgroup.co.kr</td>
+                    </tr>
+                    <tr>
+                        <td colspan="8" class="no_data">검색된 내용이 없습니다.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <ul class="ui-pagination">
+            <li><a href="#"><span>처음</span></a></li>
+            <li><a href="#"><span>이전</span></a></li>
+            <li class="active"><a href="#"><span>1</span></a></li>
+            <li><a href="#"><span>2</span></a></li>
+            <li><a href="#"><span>3</span></a></li>
+            <li><a href="#"><span>4</span></a></li>
+            <li><a href="#"><span>5</span></a></li>
+            <li><a href="#"><span>다음</span></a></li>
+            <li><a href="#"><span>마지막</span></a></li>
+        </ul>
+
+    </div>
+</div>
+
+<script>
+    // 메뉴 활성화
+    $plugins.mymenu.init(2,1);
+</script>
+
+</body>
+</html>
